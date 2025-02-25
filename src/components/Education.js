@@ -1,5 +1,6 @@
 // src/components/Education.js
 import React from 'react';
+import '../App.css';
 
 const Education = ({ education }) => {
   return (

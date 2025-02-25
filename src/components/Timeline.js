@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const Timeline = ({ education, experience }) => {
     return (

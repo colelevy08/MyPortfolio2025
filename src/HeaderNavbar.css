@@ -1,0 +1,75 @@
+/* HeaderNavbar.css */
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    margin-left: 20px;  /* Adds space between hamburger icon and "Home" */
+  }
+  
+  /* Dropdown container - initially hidden */
+  .dropdown-container {
+    display: none;
+    position: absolute;
+    top: 60px;  /* Position the dropdown just below the navbar */
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-top: 10px;
+    flex-direction: column;
+    width: max-content;
+  }
+  
+  /* Show dropdown when hovering over the menu icon or navbar container */
+  .navbar-container:hover .dropdown-container,
+  .menu-icon:hover + .dropdown-container,
+  .dropdown-container:hover {
+    display: flex;
+  }
+  
+  /* Dropdown items styling */
+  .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #444;
+  }
+  

@@ -1,5 +1,7 @@
 // src/components/WorkHistory.js
 import React from 'react';
+import '../App.css';
+
 
 const WorkHistory = ({ workHistory }) => {
   return (
